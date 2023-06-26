@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickUpItems : MonoBehaviour
 {
+  
     public Transform theDest;
 
     void OnMouseDown()
@@ -20,5 +21,6 @@ public class PickUpItems : MonoBehaviour
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
         GetComponent<BoxCollider>().enabled = true;
+        
     }
 }
